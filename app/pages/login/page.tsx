@@ -12,13 +12,13 @@ export default function AuthTabs() {
       <div className="w-full max-w-xl">
         <div className="flex justify-center mb-0">
           <button
-            className={`px-4 py-2 rounded-t-lg ${activeTab === 'login' ? 'bg-red-500 text-white ' : 'bg-gray-200  hover:bg-gray-400  transition duration-200'}`}
+            className={`px-4 py-2 rounded-t-lg ${activeTab === 'login' ? 'bg-cyan-400 text-white ' : 'bg-gray-200  hover:bg-gray-400  transition duration-200'}`}
             onClick={() => setActiveTab('login')}>
             Login
           </button>
 
           <button
-            className={`px-4 py-2 rounded-t-lg ${activeTab === 'signup' ? 'bg-red-500 text-white' : 'bg-gray-200  hover:bg-gray-400 transition duration-200'}`}
+            className={`px-4 py-2 rounded-t-lg ${activeTab === 'signup' ? 'bg-cyan-400 text-white' : 'bg-gray-200  hover:bg-gray-400 transition duration-200'}`}
             onClick={() => setActiveTab('signup')}>
             Cadastro
           </button>
@@ -65,7 +65,7 @@ function LoginForm() {
           required
         />
       </div>
-      <button className="w-full px-4 py-2 font-bold text-white bg-red-600 rounded-lg hover:bg-red-800 transition duration-300">
+      <button className="w-full px-4 py-2 font-bold text-white bg-cyan-400 rounded-lg hover:bg-cyan-700 transition duration-300">
         Entrar
       </button>
     </form>
@@ -113,7 +113,7 @@ function SignupForm() {
           required
         />
       </div>
-      <button className="w-full px-4 py-2 font-bold text-white bg-red-600 rounded-lg hover:bg-red-700 transition duration-300">
+      <button className="w-full px-4 py-2 font-bold text-white bg-cyan-400 rounded-lg hover:bg-cyan-600 transition duration-300">
         Cadastrar
       </button>
     </form>

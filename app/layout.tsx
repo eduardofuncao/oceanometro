@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header/cabecalho";
 import Footer from "./components/footer/rodape";
+import CookiePopup from "./components/cookies/Cookie";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,9 +26,9 @@ export default function RootLayout({
         <main>
 
           {children}
-          
-        </main>
 
+        </main>
+      <CookiePopup/>
       <Footer/>
       </body>
     </html>

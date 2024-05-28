@@ -11,7 +11,7 @@ export default function Header() {
           <span className="ml-3 text-xl font-bold text-gray-300">Oceanômetro</span>
         </div>
         <nav className="flex space-x-4">
-          <Link href="/contact"className="text-gray-300 hover:text-red-600">Contato</Link>
+          <Link href="/contact"className="text-gray-300 hover:text-cyan-500">Contato</Link>
         </nav>
       </div>
     </header>

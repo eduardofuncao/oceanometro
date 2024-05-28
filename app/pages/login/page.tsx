@@ -7,37 +7,38 @@ export default function AuthTabs() {
   const [activeTab, setActiveTab] = useState('login');
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Link href="/" className="fixed top-4 left-4 text-red-700 hover:underline">
-        Voltar
-      </Link>
-      <div className="flex mb-6 mt-8">
-        <button
-          className={`px-4 py-2 rounded-t-lg ${activeTab === 'login' ? 'bg-red-500 text-white' : 'bg-gray-200'}`}
-          onClick={() => setActiveTab('login')}
-        >
-          Login
-        </button>
-        <button
-          className={`px-4 py-2 rounded-t-lg ${activeTab === 'signup' ? 'bg-red-500 text-white' : 'bg-gray-200'}`}
-          onClick={() => setActiveTab('signup')}
-        >
-          Cadastro
-        </button>
-      </div>
-      <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-md relative">
-        {activeTab === 'login' ? (
-          <LoginForm />
-        ) : (
-          <SignupForm />
-        )}
+    <div className="bg-slate-600 min-h-screen flex items-center justify-center">
+    
+      <div className="w-full max-w-xl">
+        <div className="flex justify-center mb-0">
+          <button
+            className={`px-4 py-2 rounded-t-lg ${activeTab === 'login' ? 'bg-red-500 text-white ' : 'bg-gray-200  hover:bg-gray-400  transition duration-200'}`}
+            onClick={() => setActiveTab('login')}>
+            Login
+          </button>
+
+          <button
+            className={`px-4 py-2 rounded-t-lg ${activeTab === 'signup' ? 'bg-red-500 text-white' : 'bg-gray-200  hover:bg-gray-400 transition duration-200'}`}
+            onClick={() => setActiveTab('signup')}>
+            Cadastro
+          </button>
+        </div>
+        <div className="w-full p-8 bg-white rounded-b-lg shadow-md">
+          {activeTab === 'login' ? (
+            <LoginForm />
+          ) : (
+            <SignupForm />
+          )}
+        </div>
       </div>
     </div>
+    
   );
 }
 
 function LoginForm() {
   return (
+    <div>
     <form>
       <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
       <div className="mb-4">
@@ -64,10 +65,11 @@ function LoginForm() {
           required
         />
       </div>
-      <button className="w-full px-4 py-2 font-bold text-white bg-red-600 rounded-lg hover:bg-red-700">
+      <button className="w-full px-4 py-2 font-bold text-white bg-red-600 rounded-lg hover:bg-red-800 transition duration-300">
         Entrar
       </button>
     </form>
+    </div>
   );
 }
 
@@ -111,7 +113,7 @@ function SignupForm() {
           required
         />
       </div>
-      <button className="w-full px-4 py-2 font-bold text-white bg-red-600 rounded-lg hover:bg-red-700">
+      <button className="w-full px-4 py-2 font-bold text-white bg-red-600 rounded-lg hover:bg-red-700 transition duration-300">
         Cadastrar
       </button>
     </form>

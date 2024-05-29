@@ -1,18 +1,25 @@
 {
   "users": [
     {
-        "id": 1,
-        "name": "John Doe",
-        "email": "john@example.com",
-        "CPF": "12345678900",
-        "value": 50
-      },
-      {
-        "id": 2,
-        "name": "Jane Smith",
-        "email": "jane@example.com",
-        "CPF": "98765432100",
-        "value": 75
-      }
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "CPF": "12345678900",
+      "value": 50
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "CPF": "98765432100",
+      "value": 75
+    },
+    {
+      "id": "4186",
+      "name": "Artur Fiorindo",
+      "email": "art@gmail.com",
+      "CPF": "46666437616",
+      "value": "126"
+    }
   ]
 }

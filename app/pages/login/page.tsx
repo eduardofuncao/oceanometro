@@ -52,7 +52,8 @@ export default function Signup() {
     <div className="bg-slate-600 min-h-screen flex items-center justify-center">
       <div className="w-full max-w-xl">
         <div className="w-full p-8 bg-slate-300 rounded-lg shadow-md">
-          <h2 className="text-2xl font-bold mb-6 text-center">Cadastro</h2>
+          <h2 className="text-2xl font-bold mb-6 text-center">Cadastre-se e faça a sua doação</h2>
+          <p className='text-center pb-2'>Ao fazer o cadastro você será redirecionado para a pagina com um QrCode para efetuar a doação</p>
           {showQRCode ? (
             <div className="text-center">
               <p>Cadastro realizado com sucesso! Agora abra o aplicativo do seu bancao ou câmera do celular e aponte para o QrCode para efetuar sua doação!</p>

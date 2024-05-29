@@ -1,121 +1,133 @@
 "use client";
-// components/AuthTabs.js
 import { useState } from 'react';
+import axios from 'axios';
+import Image from 'next/image';
+import qrcode from '../../assets/qrcode.png';
 import Link from 'next/link';
 
-export default function AuthTabs() {
-  const [activeTab, setActiveTab] = useState('login');
+
+export default function Signup() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    CPF: '',
+    value: 0
+  });
+  const [showQRCode, setShowQRCode] = useState(false);
+
+  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post('http://localhost:4000/users', formData);
+
+      if (response.status === 201) {
+        alert('Cadastro realizado com sucesso!');
+        setShowQRCode(true);
+        // Reset form data
+        setFormData({
+          name: '',
+          email: '',
+          CPF: '',
+          value: 0
+        });
+      } else {
+        alert('Erro ao realizar cadastro. Tente novamente.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Erro ao realizar cadastro. Tente novamente.');
+    }
+  };
 
   return (
     <div className="bg-slate-600 min-h-screen flex items-center justify-center">
-    
       <div className="w-full max-w-xl">
-        <div className="flex justify-center mb-0">
-          <button
-            className={`px-4 py-2 rounded-t-lg ${activeTab === 'login' ? 'bg-cyan-400 text-white ' : 'bg-gray-200  hover:bg-gray-400  transition duration-200'}`}
-            onClick={() => setActiveTab('login')}>
-            Login
-          </button>
-
-          <button
-            className={`px-4 py-2 rounded-t-lg ${activeTab === 'signup' ? 'bg-cyan-400 text-white' : 'bg-gray-200  hover:bg-gray-400 transition duration-200'}`}
-            onClick={() => setActiveTab('signup')}>
-            Cadastro
-          </button>
-        </div>
-        <div className="w-full p-8 bg-white rounded-b-lg shadow-md">
-          {activeTab === 'login' ? (
-            <LoginForm />
+        <div className="w-full p-8 bg-slate-300 rounded-lg shadow-md">
+          <h2 className="text-2xl font-bold mb-6 text-center">Cadastro</h2>
+          {showQRCode ? (
+            <div className="text-center">
+              <p>Cadastro realizado com sucesso! Agora abra o aplicativo do seu bancao ou câmera do celular e aponte para o QrCode para efetuar sua doação!</p>
+              <Image src={qrcode} alt="QR Code" className="mx-auto mt-4" />
+              <Link className='text-cyan-600 hover:text-cyan-800 transition duration-200' href='/'>Voltar</Link>
+            </div>
           ) : (
-            <SignupForm />
+            <form onSubmit={handleSubmit}>
+              <div className="mb-4">
+                <label className="block mb-2 text-sm font-medium text-gray-700" htmlFor="name">
+                  Nome
+                </label>
+                <input
+                  className="w-full px-3 py-2 border rounded-lg"
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  placeholder='Nome'
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block mb-2 text-sm font-medium text-gray-700" htmlFor="email">
+                  Email
+                </label>
+                <input
+                  className="w-full px-3 py-2 border rounded-lg"
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  placeholder='exemplo(xxx@email.com)'
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block mb-2 text-sm font-medium text-gray-700" htmlFor="CPF">
+                  CPF
+                </label>
+                <input
+                  className="w-full px-3 py-2 border rounded-lg"
+                  type="text"
+                  id="CPF"
+                  name="CPF"
+                  value={formData.CPF}
+                  onChange={handleChange}
+                  required
+                  placeholder='apenas números exemplo(xxx xxx xxx xx)'
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block mb-2 text-sm font-medium text-gray-700" htmlFor="value">
+                  Valor
+                </label>
+                <input
+                  className="w-full px-3 py-2 border rounded-lg"
+                  type="number"
+                  id="value"
+                  name="value"
+                  value={formData.value}
+                  onChange={handleChange}
+                  required
+                  placeholder='R$'
+                />
+              </div>
+              <button className="w-full px-4 py-2 font-bold text-white bg-cyan-400 rounded-lg hover:bg-cyan-600 transition duration-300">
+                Doar
+              </button>
+            </form>
           )}
         </div>
       </div>
     </div>
-    
-  );
-}
-
-function LoginForm() {
-  return (
-    <div>
-    <form>
-      <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
-      <div className="mb-4">
-        <label className="block mb-2 text-sm font-medium text-gray-700" htmlFor="email">
-          Email
-        </label>
-        <input
-          className="w-full px-3 py-2 border rounded-lg"
-          type="email"
-          id="email"
-          name="email"
-          required
-        />
-      </div>
-      <div className="mb-4">
-        <label className="block mb-2 text-sm font-medium text-gray-700" htmlFor="password">
-          Senha
-        </label>
-        <input
-          className="w-full px-3 py-2 border rounded-lg"
-          type="password"
-          id="password"
-          name="password"
-          required
-        />
-      </div>
-      <button className="w-full px-4 py-2 font-bold text-white bg-cyan-400 rounded-lg hover:bg-cyan-700 transition duration-300">
-        Entrar
-      </button>
-    </form>
-    </div>
-  );
-}
-
-function SignupForm() {
-  return (
-    <form>
-      <h2 className="text-2xl font-bold mb-6 text-center">Cadastro</h2>
-      <div className="mb-4">
-        <label className="block mb-2 text-sm font-medium text-gray-700" htmlFor="name">
-          Nome
-        </label>
-        <input
-          className="w-full px-3 py-2 border rounded-lg"
-          type="text"
-          id="name"
-          name="name"
-          required
-        />
-      </div>
-      <div className="mb-4">
-        <label className="block mb-2 text-sm font-medium text-gray-700" htmlFor="email">
-          Email
-        </label>
-        <input
-          className="w-full px-3 py-2 border rounded-lg"
-          type="email"
-          id="email"
-          name="email"
-          required
-        />
-      </div>
-      <div className="mb-4">
-        <label className="block mb-2 text-sm font-medium text-gray-700" htmlFor="password">
-          Senha
-        </label>
-        <input
-          className="w-full px-3 py-2 border rounded-lg"
-          type="password"
-          id="password"
-          name="password"
-          required
-        />
-      </div>
-      <button className="w-full px-4 py-2 font-bold text-white bg-cyan-400 rounded-lg hover:bg-cyan-600 transition duration-300">
-        Cadastrar
-      </button>
-    </form>
   );
 }

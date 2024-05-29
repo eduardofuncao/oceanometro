@@ -1,11 +1,18 @@
 {
   "users": [
     {
-      "id": "dabe",
-      "name": "admin",
-      "email": "admin@fiap.com",
-      "CPF": "11122233301",
-      "value": "150"
-    }
+        "id": 1,
+        "name": "John Doe",
+        "email": "john@example.com",
+        "CPF": "12345678900",
+        "value": 50
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane@example.com",
+        "CPF": "98765432100",
+        "value": 75
+      }
   ]
 }

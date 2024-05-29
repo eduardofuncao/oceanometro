@@ -7,3 +7,8 @@
     text-wrap: balance;
   }
 }
+.custom-bg {
+  background-image: url('./assets/BackOceano.jpeg');
+  background-size: cover;
+  background-position: center;
+}

@@ -11,7 +11,7 @@ export default function Home() {
           <div className="h-32 sm:w-full md:w-3/4 lg:w-2/3 mb-4 bg-black rounded-3xl"></div>
           <p className="text-2xl">A cada um real doado, você...</p>
           <Link href="../pages/login">
-            <button className="h-9 bg-cyan-400 rounded px-4 hover:bg-cyan-700 transition duration-200">Doe aqui</button>
+            <button className="h-14 text-xl bg-cyan-400 rounded px-4 hover:bg-cyan-700 transition duration-200">Faca a sua Doação</button>
           </Link>
         </div>
         <div className="mt-12">

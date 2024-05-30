@@ -1,5 +1,5 @@
 import Link from "next/link";
-import TopDoadores from "./components/placar/lista";
+import TopDoadores from "./components/top10/lista";
 
 export default function Home() {
   return (

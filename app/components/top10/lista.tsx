@@ -47,7 +47,7 @@ const TopDoadores = () => {
 
   return (
     <div className="bg-transparent flex items-center justify-center py-8">
-      <div className="w-full max-w-3xl p-8 bg-slate-800 shadow-md rounded-lg">
+      <div className="w-full max-w-xl p-8 bg-slate-800 shadow-md rounded-lg"> {/* Ajustei a largura máxima para max-w-xl */}
         <h1 className="text-4xl font-bold mb-6 text-center text-indigo-200">Top 10 Contribuidores</h1>
         <ul className="text-lg text-white space-y-4">
           {users.map((user, index) => (

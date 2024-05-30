@@ -20,6 +20,13 @@
       "email": "art@gmail.com",
       "CPF": "46666437616",
       "value": "126"
+    },
+    {
+      "id": "6b95",
+      "name": "Bruno",
+      "email": "bruno@fiap.com",
+      "CPF": "2223334401",
+      "value": "2000"
     }
   ]
 }

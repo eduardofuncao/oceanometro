@@ -74,7 +74,7 @@ export default function Signup() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  placeholder='Nome'
+                  placeholder='Nome e último sobrenome'
                 />
               </div>
               <div className="mb-4">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import TopDoadores from "./components/placar/lista";
 
 export default function Home() {
   return (
@@ -12,6 +13,9 @@ export default function Home() {
           <Link href="../pages/login">
             <button className="h-9 bg-cyan-400 rounded px-4 hover:bg-cyan-700 transition duration-200">Doe aqui</button>
           </Link>
+        </div>
+        <div className="mt-12">
+          <TopDoadores />
         </div>
       </main>
     </div>

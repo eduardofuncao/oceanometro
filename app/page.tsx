@@ -51,10 +51,16 @@ export default function Home() {
           <p className="text-2xl text-center mb-6 bg-black bg-opacity-80 p-4 rounded-lg font-mono">
             Muitas dessas garrafas acabam poluindo nossos preciosos oceanos, causando danos irreparáveis à vida marinha e ao ecossistema. Você pode fazer a diferença! Sua doação nos ajuda a preservar nossos oceanos e proteger a vida marinha. Cada real doado é um passo em direção a um futuro mais sustentável e saudável para o nosso planeta. Junte-se a nós nessa causa e faça sua doação hoje mesmo. Seu apoio é fundamental para continuarmos nosso trabalho de conservação marinha. Faça parte dessa mudança! <strong>Doe já!</strong>
           </p>
-          <Carrossel images={images} /> {/* Renderize o componente Carrossel passando as imagens */}
+          <div className='mb-9 mt-9'>
+          <Carrossel images={images} /> 
+          </div>
+          <p className="text-2xl text-center mb-6 p-4 rounded-lg font-mono">
+          Essas são algumas das infinitas imagens do impacto que as garrafas PET não descartadas de forma correta geram ao redor do Mundo no nosso oceano!
+          </p>
           <Link href="../pages/login">
             <button className="h-14 text-xl mt-3 bg-cyan-400 rounded px-4 hover:bg-cyan-700 transition duration-200">Faça a sua Doação</button>
           </Link>
+          
         </div>
         <div className="mt-12">
           <TopDoadores />

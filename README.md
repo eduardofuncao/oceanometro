@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Oceanômetro
 
-## Getting Started
+Bem-vindo ao projeto Oceanômetro! Este projeto tem como objetivo conscientizar as pessoas sobre o impacto das garrafas PET não descartadas corretamente nos oceanos. O site apresenta um contador em tempo real do número de garrafas PET vendidas globalmente e um carrossel de imagens que mostram os efeitos prejudiciais dessas garrafas no meio ambiente marinho.
 
-First, run the development server:
+## Visão Geral
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+O Oceanômetro é uma aplicação web construída com Next.js e Tailwind CSS. O site possui as seguintes funcionalidades:
+- Um contador em tempo real que representa o número de garrafas PET vendidas desde que o usuário abriu a página.
+- Um carrossel de imagens que ilustra o impacto ambiental das garrafas PET.
+- Uma página sobre a iniciativa.
+- Uma página que contem um pequeno cadastro para que o usuário possa doar.
+- Uma seção de doações que incentiva os visitantes a contribuírem para a preservação dos oceanos.
+- Uma página caso o usuário queira doar novamente.
+- Um popup de consentimento de cookies.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tecnologias Usadas
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Slick](https://react-slick.neostack.com/) (para o carrossel de imagens)
 
-## Learn More
+## Instalação
 
-To learn more about Next.js, take a look at the following resources:
+Siga os passos abaixo para instalar e executar o projeto localmente:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+-npm install --save-dev @types/react-slick (usado para o carrossel localizado no site)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Uso
+
+- Acesse a aplicação em seu navegador.
+- Veja o contador de garrafas PET sendo incrementado em tempo real.
+- Navegue pelo carrossel de imagens para ver o impacto ambiental das garrafas PET.
+- Utilize a seção de doações para contribuir para a causa.
+- Interaja com o popup de consentimento de cookies para aceitar ou recusar o uso de cookies.
+
+## Autores
+
+
+
+- Nomes: 
+    Artur Fiorindo rm: 553481 
+    Eduardo Função rm: 553362
+    Jhoe Hashimoto rm: 553831
+
+- Turma: 1TDSZ 
+
+
+Obrigado por visitar nosso repositório e apoiar a causa da preservação dos oceanos. Juntos, podemos fazer a diferença!
+

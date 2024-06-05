@@ -40,6 +40,10 @@ Siga os passos abaixo para instalar e executar o projeto localmente:
 - Utilize a seção de doações para contribuir para a causa.
 - Interaja com o popup de consentimento de cookies para aceitar ou recusar o uso de cookies.
 
+## Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
 ## Autores
 
 

@@ -1,3 +1,5 @@
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=33D7FF&height=120&section=header"/>
+
 # Oceanômetro
 
 Bem-vindo ao projeto Oceanômetro! Este projeto tem como objetivo conscientizar as pessoas sobre o impacto das garrafas PET não descartadas corretamente nos oceanos. O site apresenta um contador em tempo real do número de garrafas PET vendidas globalmente e um carrossel de imagens que mostram os efeitos prejudiciais dessas garrafas no meio ambiente marinho.
@@ -58,3 +60,4 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICEN
 
 Obrigado por visitar nosso repositório e apoiar a causa da preservação dos oceanos. Juntos, podemos fazer a diferença!
 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=33D7FF&height=120&section=header"/>

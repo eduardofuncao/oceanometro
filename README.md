@@ -34,6 +34,8 @@ Siga os passos abaixo para instalar e executar o projeto localmente:
 
 
 
+
+
 ## Uso
 
 - Acesse a aplicação em seu navegador.

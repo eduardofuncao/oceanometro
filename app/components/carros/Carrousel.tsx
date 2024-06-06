@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import { StaticImageData } from 'next/image';
+import proximo from '../../assets/proximo.png';
+import voltar from '../../assets/voltar.png';
+import  Image  from 'next/image';
 
 // Define o tipo da imagem que o componente espera
 export interface ImageType {
@@ -43,13 +46,13 @@ export default function Carrossel({ images }: CarrosselProps) {
       <img src={src} alt={currentImage.alt} className="w-full h-96 object-cover hover:opacity-90 transition duration-300" />
 
       {/* Botão para retroceder */}
-      <button onClick={prevImage} className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-full opacity-75 hover:opacity-100 transition duration-300">
-        Anterior
+      <button onClick={prevImage} className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-full opacity-75 hover:opacity-100 transition duration-500">
+        <Image src={voltar} alt={'Botao voltar'} className='w-10'></Image>
       </button>
 
       {/* Botão para avançar */}
-      <button onClick={nextImage} className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-full opacity-75 hover:opacity-100 transition duration-300">
-        Próxima
+      <button onClick={nextImage} className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-full opacity-75 hover:opacity-100 transition duration-500">
+        <Image src={proximo} alt={'Boatao proximo'} className='w-10'></Image>
       </button>
     </div>
   );

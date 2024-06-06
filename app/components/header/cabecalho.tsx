@@ -8,7 +8,7 @@ export default function Header() {
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         <div className="flex items-center">
           <Link href="/"><Image src={logo} alt="Logo" width={50} height={50} /></Link>
-          <span className="ml-3 text-xl font-bold text-gray-300">Oceanômetro</span>
+          <span className="ml-3 text-xl font-bold text-gray-300 ">Oceanômetro</span>
         </div>
         <nav className="flex space-x-4">
           <Link href="./pages/sobre/"className="text-gray-300 hover:text-cyan-500">Sobre</Link>

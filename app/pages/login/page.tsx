@@ -49,7 +49,7 @@ export default function Signup() {
 
   return (
     <div className="relative min-h-screen bg-slate-600 flex items-center justify-center text-white">
-      <div className="absolute inset-0 bg-cover "></div>
+      <div className="absolute inset-0 bg-cover"></div>
       <div className="relative z-10 w-full max-w-xl">
         <div className="w-full p-8 bg-slate-800 bg-opacity-90 rounded-lg shadow-md">
           <h2 className="text-2xl font-bold mb-6 text-center">Cadastre-se e faça a sua doação</h2>
@@ -67,7 +67,7 @@ export default function Signup() {
                   Nome
                 </label>
                 <input
-                  className="w-full px-3 py-2 border rounded-lg"
+                  className="w-full px-3 py-2 border rounded-lg text-black"
                   type="text"
                   id="name"
                   name="name"
@@ -82,7 +82,7 @@ export default function Signup() {
                   Email
                 </label>
                 <input
-                  className="w-full px-3 py-2 border rounded-lg"
+                  className="w-full px-3 py-2 border rounded-lg text-black"
                   type="email"
                   id="email"
                   name="email"
@@ -97,7 +97,7 @@ export default function Signup() {
                   CPF
                 </label>
                 <input
-                  className="w-full px-3 py-2 border rounded-lg"
+                  className="w-full px-3 py-2 border rounded-lg text-black"
                   type="text"
                   id="CPF"
                   name="CPF"
@@ -112,7 +112,7 @@ export default function Signup() {
                   Valor
                 </label>
                 <input
-                  className="w-full px-3 py-2 border rounded-lg"
+                  className="w-full px-3 py-2 border rounded-lg text-black"
                   type="number"
                   id="value"
                   name="value"

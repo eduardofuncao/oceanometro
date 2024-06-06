@@ -43,7 +43,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center flex-grow mt-10">
           <div className="text-5xl sm:text-6xl md:text-4xl lg:text-9xl mb-10">Oceanômetro</div>
           <p className="text-xl md:text-2xl lg:text-2xl text-center mb-10 pb-5 bg-black bg-opacity-80 p-6 rounded-lg font-mono">
-            A cada segundo, 20 mil de garrafas PET são vendidas no mundo inteiro. Esse contador representa o número de garrafas PET vendidas desde o momento em que você abriu o site.
+            A cada segundo, 20 mil de garrafas PET são vendidas no mundo inteiro.<strong> Esse contador representa o número de garrafas PET vendidas desde o momento em que você abriu o nosso site</strong>.
           </p>
           <div className="h-40 sm:w-full md:w-3/4 lg:w-2/3 mb-10 flex justify-center items-center flex-wrap font-mono">
             {splitNumber(counter)}

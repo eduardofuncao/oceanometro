@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 
 const AdminPage: React.FC = () => {
   return (
@@ -30,4 +30,4 @@ const AdminPage: React.FC = () => {
   );
 };
 
-export default AdminPage;
+export default AdminPage;*/

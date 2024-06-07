@@ -7,6 +7,7 @@ Bem-vindo ao projeto Oceanômetro! Este projeto tem como objetivo conscientizar 
 ## Links
 
 -Link Vercel: https://oceanometro.vercel.app
+-Link Vídeo: https://youtu.be/a8wX2OkUAPY
 
 ## Visão Geral
 

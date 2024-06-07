@@ -4,6 +4,10 @@
 
 Bem-vindo ao projeto Oceanômetro! Este projeto tem como objetivo conscientizar as pessoas sobre o impacto das garrafas PET não descartadas corretamente nos oceanos. O site apresenta um contador em tempo real do número de garrafas PET vendidas globalmente e um carrossel de imagens que mostram os efeitos prejudiciais dessas garrafas no meio ambiente marinho.
 
+## Links
+
+-Link Vercel: https://oceanometro.vercel.app
+
 ## Visão Geral
 
 O Oceanômetro é uma aplicação web construída com Next.js e Tailwind CSS. O site possui as seguintes funcionalidades:

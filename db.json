@@ -20,6 +20,13 @@
       "email": "jhoe@fiap.com",
       "CPF": "77788899902",
       "value": "20000"
+    },
+    {
+      "id": "584b",
+      "name": "Eduardo",
+      "email": "esu@fiap.com",
+      "CPF": "88899910022",
+      "value": 3700
     }
   ]
 }
